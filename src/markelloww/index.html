@@ -22,7 +22,7 @@
 			<li>
 				<a>Ссылка-изображение</a>
 				<br>
-				<a href="https://kubsu.ru"><img src="image.png" width="100" height="100"></a>
+				<a href="https://kubsu.ru"><img src="image.png" width="100" height="100" alt="first_image"></a>
 			</li>
 			<li>
 				<a href="about/inside_page.html">Сокращенная ссылка на внутреннюю страницу</a>
@@ -62,17 +62,17 @@
 			<li>
 				<a>Ссылка из прямоугольных и круглых областей картинки</a>
 				<br/>
-				<img src="image.png" width="200" height="200" usemap="#marksmap">
+				<img src="image.png" width="200" height="200" alt="second_image" usemap="#marksmap">
 				<map name = "marksmap">
-					<area shape="rect" coords="0, 0, 200, 100" href="https://vk.com" alt="Прямоугольная область">
-					<area shape="circle" coords="100, 150, 50" href="https://youtube.com" alt="Круглая область">
+					<area shape="rect" coords="0,0,200,100" href="https://vk.com" alt="Прямоугольная область">
+					<area shape="circle" coords="100,150,50" href="https://youtube.com" alt="Круглая область">
 				</map>
 			</li>
 			<li>
 				<a href>Ссылка с пустым href</a>
 			</li>
 			<li>
-				<a "https://kubsu.ru">Ссылка без href</a>
+				<a>Ссылка без href</a>
 			</li>
 			<li>
 				<a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковиком</a>
@@ -103,7 +103,7 @@
 			<label>
 				ФИО:
 				<br/>
-				<input placeholder="Попов Марк Владимирович" type="name">
+				<input placeholder="Попов Марк Владимирович" type="text">
 			</label>
 			<br/>
 			<label>
@@ -124,17 +124,15 @@
 				<input type="date">
 			</label>
 			<br/>
+			Пол:
+			<br/>
 			<label>
-				Пол:
-				<br/>
-				<label>
-					М
-					<input type="radio" value="М">
-				</label>
-				<label>
-					Ж
-					<input type="radio" value="Ж">
-				</label>
+				М
+				<input type="radio" value="М">
+			</label>
+			<label>
+				Ж
+				<input type="radio" value="Ж">
 			</label>
 			<br/>
 			<label>
