@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задание 1</title>
+
+</head>
+
+<body>
+	<div id="links">
+	<h1>Гиперссылки</h1>
+		<ol>
+			<li>
+				<a href="http://kubsu.ru">Аболютная гиперссылка на главную страницу kubsu.ru (http)</a>
+			</li>
+			<li>
+				<a href="https://kubsu.ru">Аболютная гиперссылка на главную страницу kubsu.ru (https)</a>
+			</li>
+			<li>
+				<a>Ссылка-изображение</a>
+				<br>
+				<a href="https://kubsu.ru"><img src="image.png" width="100" height="100"></a>
+			</li>
+			<li>
+				<a href="about/inside_page.html">Сокращенная ссылка на внутреннюю страницу</a>
+			</li>
+			<li>
+				<a href="/src/markelloww">Сокращенная ссылка на главную страницу</a>
+			</li>
+			<li>
+				<a href="#links">Ссылка на фрагмент текущей страницы</a>
+			</li>
+			<li>
+				<a href="https://ozon.ru/search/?delivery=8&from_global=true&text=java+spring">Ссылка с тремя параметрами в URL</a>
+			</li>
+			<li>
+				<a href="https://moodle.kubsu.ru/user/profile.php?id=20202">Ссылка с параметром id в URL</a>
+			</li>
+			<li>
+				<a href="this_directory.html">Относительная ссылка на страницу в текущем каталоге</a>
+			</li>
+			<li>
+				<a href="about/about_page.html">Относительная ссылка на страницу в каталоге about</a>
+			</li>
+			<li>
+				<a href="../katalog_vishe.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+			</li>
+			<li>
+				<a href="/katalog_vishe_2.html">Относительная ссылка на страницу двумя уровнями выше</a>
+			</li>
+			<li>
+				<a>Контекстная</a>
+				<a href="https://kubsu.ru">ссылка</a>
+				<a>в тексе абзаца</a>
+			</li>
+			<li>
+				<a href="https://leetcode.com/problemset/#headlessui-portal-root">Ссылка на фрагмент страницы стороннего сайта</a>
+			</li>
+			<li>
+				<a>Ссылка из прямоугольных и круглых областей картинки</a>
+				<br/>
+				<img src="image.png" width="200" height="200" usemap="#marksmap">
+				<map name = "marksmap">
+					<area shape="rect" coords="0, 0, 200, 100" href="https://vk.com" alt="Прямоугольная область">
+					<area shape="circle" coords="100, 150, 50" href="https://youtube.com" alt="Круглая область">
+				</map>
+			</li>
+			<li>
+				<a href>Ссылка с пустым href</a>
+			</li>
+			<li>
+				<a "https://kubsu.ru">Ссылка без href</a>
+			</li>
+			<li>
+				<a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковиком</a>
+			</li>
+			<li>
+				<a href="https://kubsu.ru" rel="nofollow">
+					<!--noindex-->
+					Запрещенная для индексации поисковиком ссылка
+					<!--/noindex-->
+				</a>
+			</li>
+			<li>
+				<a>Нумерованный список ссылок с подписями title</a>
+				<ul>
+					<li>
+						<a href="#links" title="Нумерованый список ссылок">Список гиперссылок</a>
+					</li>
+					<li>
+						<a href="#form" title="Нумерованый список ссылок">Форма</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="ftp://username:123@somesite.com/auth.html">Ссылка на файл на сервере FTP с авторизацией</a>
+			</li>
+		</ol>
+	</div>
+
+	<div id="form">
+		<h1>Форма</h1>
+		<form action="/" method="POST">
+			<label>
+				ФИО:
+				<br/>
+				<input placeholder="Попов Марк Владимирович" type="name">
+			</label>
+			<br/>
+			<label>
+				Телефон:
+				<br/>
+				<input placeholder="+78005553535" type="tel">
+			</label>
+			<br/>
+			<label>
+				E-mail:
+				<br/>
+				<input placeholder="example@mail.ru" type="email">
+			</label>
+			<br/>
+			<label>
+				Дата рождения:
+				<br/>
+				<input type="date">
+			</label>
+			<br/>
+			<label>
+				Пол:
+				<br/>
+				<label>
+					М
+					<input type="radio" value="М">
+				</label>
+				<label>
+					Ж
+					<input type="radio" value="Ж">
+				</label>
+			</label>
+			<br/>
+			<label>
+				Любимый язык программирования:
+				<br/>
+				<select multiple="multiple" size="5">
+					<option value="1">Pascal</option>
+					<option value="2">C</option>
+					<option value="3">C++</option>
+					<option value="4">JavaScript</option>
+					<option value="5">PHP</option>
+					<option value="6">Python</option>
+					<option value="7">Java</option>
+					<option value="8">Haskel</option>
+					<option value="9">Clojure</option>
+					<option value="10">Prolog</option>
+					<option value="11">Scala</option>
+				</select>
+			</label>
+			<br/>
+			<label>
+				Биография:
+				<br/>
+				<textarea>Введи текст</textarea>
+			</label>
+			<br/>
+			<label>
+				С контрактом ознакомлен(а)
+				<br/>
+				<input type="checkbox">
+			</label>
+			<br/>
+			<input type="submit" value="Сохранить">
+		</form>
+	</div>
+
+</body>
+
+</html>
