@@ -40,16 +40,16 @@
 				<a href="https://moodle.kubsu.ru/user/profile.php?id=20202">Ссылка с параметром id в URL</a>
 			</li>
 			<li>
-				<a href="this_directory.html">Относительная ссылка на страницу в текущем каталоге</a>
+				<a href="./this_directory.html">Относительная ссылка на страницу в текущем каталоге</a>
 			</li>
 			<li>
-				<a href="about/about_page.html">Относительная ссылка на страницу в каталоге about</a>
+				<a href="./about/about_page.html">Относительная ссылка на страницу в каталоге about</a>
 			</li>
 			<li>
 				<a href="../katalog_vishe.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
 			</li>
 			<li>
-				<a href="/katalog_vishe_2.html">Относительная ссылка на страницу двумя уровнями выше</a>
+				<a href="../katalog_vishe.html">Относительная ссылка на страницу двумя уровнями выше</a>
 			</li>
 			<li>
 				<a>Контекстная</a>
@@ -78,7 +78,10 @@
 				<a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковиком</a>
 			</li>
 			<li>
-				<a href="https://kubsu.ru" rel="noindex--">Запрещенная для индексации поисковиком ссылка</a>
+				<a href="https://kubsu.ru" rel="nofollow">
+					<!--noindex-->
+					Запрещенная для индексации поисковиком ссылка</a>
+					<!--/noindex-->
 			</li>
 			<li>
 				<a>Нумерованный список ссылок с подписями title</a>
