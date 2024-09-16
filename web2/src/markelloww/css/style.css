@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+#logo {
+	border-radius: 200px;
+	height: 125px;
+	width: 125px;
+	margin-left: 15px;
+	float: left;
+}
+
+.header {
+	height: 20svh;
+	background-color: skyblue;
+}
+
+.nav-menu {
+	max-width: 960px;
+	text-align: center;
+	float: right;
+}
+

@@ -5,11 +5,28 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Задание 1</title>
-
+	<title>Задание 2</title>
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+	<header class="header">
+		<img id="logo" src="img/logo.jpg" alt="Логотип сайта">
+		<nav class="nav-menu">
+			<ul>
+				<li>
+					<a href="#links" title="Гиперссылки">Гиперссылки</a>
+				</li>
+				<li>
+					<a href="#form" title="Форма">Форма</a>
+				</li>
+				<li>
+					<a href="#table" title="Таблица">Таблица</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
 	<div id="links">
 	<h1>Гиперссылки</h1>
 		<ol>
@@ -22,7 +39,7 @@
 			<li>
 				<a>Ссылка-изображение</a>
 				<br>
-				<a href="https://kubsu.ru"><img src="image.png" width="100" height="100" alt="first_image"></a>
+				<a href="https://kubsu.ru"><img src="img/image.png" width="100" height="100" alt="first_image"></a>
 			</li>
 			<li>
 				<a href="about/inside_page.html">Сокращенная ссылка на внутреннюю страницу</a>
@@ -62,7 +79,7 @@
 			<li>
 				<a>Ссылка из прямоугольных и круглых областей картинки</a>
 				<br/>
-				<img src="image.png" width="200" height="200" alt="second_image" usemap="#marksmap">
+				<img src="img/image.png" width="200" height="200" alt="second_image" usemap="#marksmap">
 				<map name = "marksmap">
 					<area shape="rect" coords="0,0,200,100" href="https://vk.com" alt="Прямоугольная область">
 					<area shape="circle" coords="100,150,50" href="https://youtube.com" alt="Круглая область">
@@ -171,6 +188,9 @@
 		</form>
 	</div>
 
+	<footer>
+
+	</footer>
 </body>
 
 </html>
