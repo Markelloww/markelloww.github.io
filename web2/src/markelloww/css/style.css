@@ -75,7 +75,6 @@ body {
 	border: 2px solid #000000;
 	padding-left: 2svh;
 }
-/*
 .table table {
 	border-collapse: collapse;
 	border: 1px solid black;
@@ -89,7 +88,6 @@ body {
 .table tr:nth-child(odd) {
 	background-color: #fff;
 }
-*/
 .main-form {
 	text-align: center;
 	background-color: #b1e0e0;
