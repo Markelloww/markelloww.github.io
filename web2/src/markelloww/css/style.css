@@ -76,6 +76,7 @@ body {
 	padding-left: 2svh;
 }
 .table table {
+	margin: auto;
 	border-collapse: collapse;
 	border: 1px solid black;
 }
