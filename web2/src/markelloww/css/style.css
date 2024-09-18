@@ -72,8 +72,8 @@ body {
 .main-table {
 	background-color: #b1e0e0;
 	margin-top: 3svh;
-	padding-left: 2svh;
 	border: 2px solid #000000;
+	padding-left: 2svh;
 }
 .main-table table {
 	border-collapse: collapse;
