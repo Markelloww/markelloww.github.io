@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Задание 2</title>
 	<link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
 	<header>
 			<img id="logo" src="img/logo.jpg" alt="Логотип сайта">
@@ -18,17 +15,15 @@
 						<a href="#links" title="Гиперссылки">Гиперссылки</a>
 					</li>
 					<li>
-						<a href="#form" title="Форма">Форма</a>
+						<a href="#table" title="Таблица">Таблица</a>
 					</li>
 					<li>
-						<a href="#table" title="Таблица">Таблица</a>
+						<a href="#form" title="Форма">Форма</a>
 					</li>
 				</ul>
 			</nav>
 			<h1>Задание 2. Попов Марк</h1>
 	</header>
-
-
 	<div class="main-box">
 		<div class="hyperlinks" id="links">
 		<h1>Гиперссылки</h1>
@@ -120,7 +115,45 @@
 			</ol>
 			<br/>
 		</div>
-
+		<div class="main-table">
+			<h1>Таблица</h1>
+			<table id="table">
+				<tr>
+					<th>Колонка №1</th>
+					<th>Колонка №2</th>
+					<th>Колонка №3</th>
+					<th>Колонка №4</th>
+				</tr>
+				<tr>
+					<td colspan="4">Ячейка [11], + [12], [13], [14]</td>
+				</tr>
+				<tr>
+					<td colspan="3">Ячейка [21], + [22], [23]</td>
+					<td>Ячейка [24]</td>
+				</tr>
+				<tr>
+					<td colspan="2">Ячейка [31], + [32]</td>
+					<td>Ячейка [33]</td>
+					<td>Ячейка [34]</td>
+				</tr>
+				<tr>
+					<td>Ячейка [41]</td>
+					<td>Ячейка [42]</td>
+					<td colspan="2">Ячейка [43], + [44]</td>
+				</tr>
+				<tr>
+					<td>Ячейка [51]</td>
+					<td colspan="3">Ячейка [52], + [53], [54]</td>
+				</tr>
+				<tr>
+					<td>Ячейка [61]</td>
+					<td>Ячейка [62]</td>
+					<td>Ячейка [63]</td>
+					<td>Ячейка [64]</td>
+				</tr>
+			</table>
+			<br/>
+		</div>
 		<div class="main-form" id="form">
 			<h1>Форма</h1>
 			<form action="/" method="POST">
@@ -192,12 +225,10 @@
 			<br/>
 		</div>
 	</div>
-
 	<footer>
 		<div class="footer_c">
 			<span>(c) Попов Марк</span>
 		</div>
 	</footer>
 </body>
-
 </html>
