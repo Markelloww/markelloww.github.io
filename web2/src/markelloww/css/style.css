@@ -76,9 +76,9 @@ body {
 	padding-left: 2svh;
 }
 .main-table table {
+	margin: auto;
 	border-collapse: collapse;
 	border: 1px solid black;
-	margin: 0 auto;
 }
 .main-table th, td {
 	border: 1px solid black;
