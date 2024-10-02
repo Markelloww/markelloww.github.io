@@ -1,0 +1,135 @@
+* {
+    font-size: 21px;
+    box-sizing: border-box;
+    margin: 0;
+}
+#logo {
+    width: 10svh;
+    height: 10svh;
+	margin-left: 1svh;
+	margin-top: 1svh;
+	border-radius: 50%;
+	border: 2px solid #000000;
+}
+header h1 {
+    font-size: 4svh;
+    height: 10svh;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #83423c;
+	height: 10svh;
+	display: flex;
+	justify-content:center;
+	margin-top: 3svh;
+	margin-right: 3svh;
+}
+.link, #form {
+	background-color: #b1e0e0;
+	border: 2px solid #000000;
+}
+body {
+    color: #4B0082;
+    background-color: skyblue;
+}
+.page-nav {
+    transform: translateX(-10svh);
+}
+.page-nav ul {
+    width: max-content;
+    margin-left: 10px;
+}
+.page-nav li {
+    background-color: #3bc5c5;
+    border: 2px solid #000000;
+    font-size: 0.5em;
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+}
+.nav-menu a {
+	text-decoration: none;
+	color: #83423c;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+	font-size: 25pt;
+	text-align: center;
+	margin: 10px 0px;
+	color: #000000;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#content {
+    max-width: 960px;
+}
+div {
+    max-width: 100%;
+}
+.link {
+    margin: 0 auto;
+}
+li {
+    margin: 0px auto;
+}
+a {
+    color: #000000;
+}
+a:hover {
+    text-decoration: underline;
+}
+th, td {
+    border: 1px solid black;
+}
+#form {
+    margin: 0 auto;
+	text-align: center;
+	align-items: center;
+}
+input, select, textarea {
+    outline: none;
+    border: 1px solid#e5e5e5;
+}
+input[type=submit], [type=radio], [type=date] {
+    cursor: pointer;
+}
+input[type=submit] {
+	border: 2px solid #000000;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 15px;
+	margin: 0 auto;
+	display: block;
+}
+textarea {
+    resize: none;
+}
+header {
+    background-color: #fb8d82;
+    border-bottom: 2px solid #000000;
+}
+#main {
+    background-color: rgb(140, 239, 232);
+    border: 5px solid #000000;
+}
+.m-auto tr:nth-child(even) {
+	background-color: #bdbdbd;
+}
+.m-auto tr:nth-child(odd) {
+	background-color: #fff;
+}
+.m-auto th, td {
+	border: 1px solid black;
+}
+.footer {
+	border: 2px solid #000000;
+	background-color: #fb8d82;
+}
+@media screen and (width>=576px) {
+    .page-nav {
+        transform: translateX(0);
+    }
+    .page-nav ul {
+        margin: unset;
+    }
+    header h1 {
+        height: 100%;
+    }
+}
