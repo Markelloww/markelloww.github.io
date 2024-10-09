@@ -1,0 +1,139 @@
+* {
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#logo {
+    width: 10svh;
+    height: 10svh;
+}
+
+header h1 {
+    font-size: 5svh;
+    height: 10svh;
+}
+
+body {
+    color: #4B0082;
+    background-color: #a484f6;
+}
+
+.page-nav {
+    background-color: rgb(70, 174, 167);
+    transform: translateX(-10svh);
+}
+
+.page-nav ul {
+    width: max-content;
+    margin-left: 10px;
+}
+
+.page-nav li {
+    background-color: #8b31c4;
+    border: 2px solid #000000;
+    font-size: 0.5em;
+}
+
+h2 {
+    font-size: 25pt;
+    margin: 10px 0px;
+}
+
+#content {
+    max-width: 960px;
+}
+
+div {
+    max-width: 100%;
+}
+
+.link {
+    margin: 0 auto;
+}
+
+li {
+    margin: 0px auto;
+}
+
+ul {
+    margin: 0 auto;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+#form {
+    margin: 0 auto;
+    padding: 0 auto;
+    align-items: center;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: 1px solid#e5e5e5;
+}
+
+input[type=submit],
+[type=radio],
+[type=date] {
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: rgb(255, 255, 255);
+}
+
+textarea {
+    resize: none;
+}
+
+header {
+    background-color: rgb(70, 174, 167);
+    border-bottom: 5px solid #000000;
+}
+
+#main {
+    background-color: rgb(140, 239, 232);
+    border: 5px solid #000000;
+}
+
+img {
+    border: 3px solid #000000;
+}
+
+tr:nth-child(even) {
+    background-color: #621ff4;
+}
+
+.footer {
+    background-color: rgb(100, 100, 167);
+}
+
+@media screen and (width>=576px) {
+
+    .page-nav {
+        transform: translateX(0);
+    }
+
+    .page-nav ul {
+        margin: unset;
+    }
+
+    header h1 {
+        height: 100%;
+    }
+
+}

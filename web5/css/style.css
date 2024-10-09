@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	height: 250px;
+	width: 100%;
+}
+.main {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	padding: 15px;
+	background-color: paleturquoise;
+	width: 50%;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 2px solid black;
+}
+.result {
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	color: black;
+	line-height: 65px;
+	font-weight: 700;
+	font-size: 25px;
+	margin: 30px auto;
+}

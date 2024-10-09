@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание №4</title>
+</head>
+
+<body>
+    <header class="header">
+        <img id="logo" src="imag.png" alt="" class="float-left mr-2">
+        <div id="heads" class="d-flex flex-column">
+            <h1 class="text-right pr-2 text-sm-left">Index.html</h1>
+            <nav class="page-nav order-sm-first d-flex justify-content-end mt-3 mt-sm-0">
+                <ul class="container-fluid flex-sm-row flex-column d-flex list-unstyled p-0">
+                    <li class="d-inline-block text-center m-0 p-1"><a href="#list"
+                            title="Маркированный список гиперссылок">Маркированный список гиперссылок</a></li>
+                    <li class="d-inline-block text-center m-0 p-1"><a href="#form" title="Форма">Форма </a></li>
+                    <li class="d-inline-block text-center m-0 p-1"><a href="#page-table" title="Таблица">Таблица</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-lg main d-flex m-auto" id="content">
+        <div class="row">
+            <div class="col-md-12 main_box mt-4 order-sm-2">
+                <h2 class="text-center mb-4" id="page-table">Таблица</h2>
+                <div class="container-fluid content-main">
+                    <table class="m-auto" id="table">
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                        <th>Колонка 4</th>
+                        <tr>
+                            <td colspan="4">Ячейка 11 объединенная с ячейками 12, 13 и 14</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Ячейка 21 объединённая с ячейками 22 и 23</td>
+                            <td>Ячейка 24</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Ячейка 31 объединённая с ячейкой 32</td>
+                            <td>Ячейка 33</td>
+                            <td>Ячейка 34</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 41</td>
+                            <td>Ячейка 42</td>
+                            <td colspan="2">Ячейка 43 объединённая с ячейкой 44</td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка 51</td>
+                            <td colspan="3">Ячейка 52 объединённая с ячейками 53 и 54</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Ячейка 61 объединенная с ячейками 62, 63 и 64</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-12 main_box mt-4 order-sm-1">
+                <h2 class="text-center">Маркированный список гиперссылок</h2>
+                <div class="container-fluid content-main">
+                    <ul class="link list list-unstyled">
+                        <li>
+                            <a href="http://kubsu.ru/index.html" target="_blank">Абсолютная гиперссылка на главную
+ страницу сайта kubsu.ru</a>
+                        </li>
+                        <li>
+                            <a href="https://kubsu.ru/index.html" target="_blank">Абсолютная гиперссылка на главную
+ сайта kubsu.ru в протоколе https</a>
+                        </li>
+                        <li>
+ Ссылка-изображение
+                            <br>
+                            <a href="https://kubsu.ru" target="_blank"><img src="image.jpg" width="400" height="300"
+                                    alt="Цветок"></a>
+                        </li>
+                        <li>
+                            <a href="/about/Inside_page.html">Сокращённая ссылка на внутреннюю</a>
+                        </li>
+                        <li>
+                            <a href="/">Сокращённая ссылка на главную</a>
+                        </li>
+                        <li>
+                            <a href="#form">Ссылка на фрагмент текущей страницы</a>
+                        </li>
+                        <li>
+                            <a href="https://www.ozon.ru/search/?delivery=2&from_global=true&text=учебная+литература+по+пограммированию"
+                                target="_blank">Ссылка с тремя параметрами в URL</a>
+                        </li>
+                        <li>
+                            <a href="https://moodle.kubsu.ru/enrol/index.php?id=780" target="_blank">Cсылка с параметром
+ id в URL</a>
+                        </li>
+                        <li><a href="image.jpg" target="_blank">Относительная ссылка на страницу в текущем каталоге</a>
+                        </li>
+                        <li>
+                            <a href="about/FKTiPM.jpg" target="_blank">Относительная ссылка на страницу в каталоге
+ about</a>
+                        </li>
+                        <li>
+                            <a href="../External_page.html">Относительная ссылка на страницу в каталоге уровнем выше
+ текущего</a>
+                        </li>
+                        <li>
+                            <a href="../../proj/Two_page.html">Относительная ссылка на страницу в каталоге двумя
+ уровнями выше текущего</a>
+                        </li>
+                        <li>
+                            <p>
+ Контекстная
+                                <a href="https://kubsu.ru" target="_blank"><i>ссылка</i></a>
+ в тексте
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://zametkinapolyah.ru/verstka-sajtov/ssylki-v-html-yakorya-v-html-vidy-html-navigacii-puti-ssylok-v-html.html/#_HTML"
+                                target="_blank">Cсылку на фрагмент страницы некоторого сайта</a>
+                        </li>
+                        <li>
+ Ссылки из прямоугольных и круглых областей картинки
+                            <br>
+                            <img src="https://static.rustore.ru/apk/1816534207/content/ICON/d289ec11-2dde-4b64-92df-88dd36f4457b.jpg"
+                                width="200" height="200" alt="Изображение" usemap="#mymap">
+                            <map name="mymap">
+                                <area shape="rect" coords="0,0,200,100" href="https://kubsu.ru/"
+                                    alt="Прямоугольная область">
+                                <area shape="circle" coords="100,150,50" href="https://kubstu.ru/"
+                                    alt="Круглая область">
+                            </map>
+                        </li>
+                        <li>
+                            <a href>Ссылка с пустым href</a>
+                        </li>
+                        <li>
+                            <a "https://kubsu.ru">Ссылка без href</a>
+                        </li>
+                        <li>
+                            <a href="https://kubsu.ru/" rel="nofollow">Ссылка, по которой запрещен переход
+ поисковикам</a>
+                        </li>
+                        <li>
+                            <a href="https://kubsu.ru" rel="nofollow">
+                                <!--noindex-->
+ Запрещенная для индексации поисковиками
+                                <!--/noindex-->
+                            </a>
+                        </li>
+                        <li>
+ " Список ссылок основной навигации сайта с подписями title "
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#link" title="Нумерованный список гиперссылок">Нумерованный список
+ гиперссылок</a>
+                                </li>
+                                <li>
+                                    <a href="#form" title="Нумерованный список гиперссылок">Форма</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="ftp://user:222@example.com/files.file.html">Ссылка на файл на сервере FTP c
+ авторизацией</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 main_box mt-4 order-sm-3">
+                <h2 class="text-center mb-4">Форма</h2>
+                <div class="container-fluid content-main">
+                    <form action="https://www.kubsu.ru" method="POST" id="form">
+                        <label>
+                            ФИО:<br>
+                            <input name="field-name-1" placeholder="Костенко Никита Алексеевич" type="name">
+                        </label><br>
+                        <label>
+                            Телефон:
+                            <input name="field-tel" placeholder="79182748252" type="tel">
+                        </label><br>
+                        <label>
+                            Email:<br>
+                            <input name="field-email" placeholder="nik.kostenko.04@bk.ru" type="email">
+                        </label><br>
+                        <label>
+ Дата рождения:<br>
+                            <input name="field-date" value="2004-10-21" type="date">
+                        </label>
+                        <label><br>
+ Пол:<br>
+                            <label>
+                                <input type="radio" name="radio-group-2" value="М">
+ М
+                            </label>
+                            <label>
+                                <input type="radio" name="radio-group-2" value="Ж">
+ Ж
+                            </label>
+                        </label><br>
+                        <label>
+ Любимый язык программирования:
+                            <br />
+                            <select name="field-name[]" multiple="multiple" size="3">
+                                <option value="Значение 1">Pascal</option>
+                                <option value="Значение 2">C</option>
+                                <option value="Значение 3">C++</option>
+                                <option value="Значение 4">JavaScript</option>
+                                <option value="Значение 5">PHP</option>
+                                <option value="Значение 6">Python</option>
+                                <option value="Значение 7">Java</option>
+                                <option value="Значение 8">Haskel</option>
+                                <option value="Значение 9">Clojure</option>
+                                <option value="Значение 10">Prolog</option>
+                                <option value="Значение 11">Scala</option>
+                            </select>
+                        </label><br>
+                        <label>
+ Биография:<br>
+                            <textarea>Я студент 2 курса Кубанского государственного университета факультета компьютерных технологий и приклданой математики. Родился и проживаю в г.Краснодар. Увлекаюсь кинематографом. Являюсь членом поисковой группы "Обелиск" </textarea>
+
+
+                        </label><br>
+ С контрактом ознакомлен(а):<br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="check-1">
+                        </label><br>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footer__inner">
+            <span>(c) Никита Костенко</span>
+        </div>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
