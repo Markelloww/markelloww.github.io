@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Задание 4</title>
+</head>
+
+<body>
+    <header class="header">
+        <img id="logo" src="img/logo.jpg" alt="" class="float-left mr-2">
+        <div id="heads" class="d-flex flex-column">
+            <h1 class="text-right pr-2 text-sm-left">Попов Марк</h1>
+            <nav class="page-nav order-sm-first d-flex justify-content-end mt-3 mt-sm-0">
+                <ul class="container-fluid flex-sm-row flex-column d-flex list-unstyled p-0">
+                    <li class="d-inline-block text-center m-0 p-1"><a href="#links"
+                            title="Маркированный список гиперссылок">Маркированный список гиперссылок</a></li>
+                    <li class="d-inline-block text-center m-0 p-1"><a href="#form" title="Форма">Форма </a></li>
+                    <li class="d-inline-block text-center m-0 p-1"><a href="#page-table" title="Таблица">Таблица</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-lg main d-flex m-auto" id="content">
+        <div class="row">
+            <div class="col-md-12 main_box mt-4 order-sm-2">
+                <div class="container-fluid content-main">
+					<h2 class="text-center mb-4" id="page-table">Таблица</h2>
+						<table class="m-auto" id="table">
+							<tr>
+								<th>Колонка №1</th>
+								<th>Колонка №2</th>
+								<th>Колонка №3</th>
+								<th>Колонка №4</th>
+							</tr>
+							<tr>
+								<td colspan="4">Ячейка [11], + [12], [13], [14]</td>
+							</tr>
+							<tr>
+								<td colspan="3">Ячейка [21], + [22], [23]</td>
+								<td>Ячейка [24]</td>
+							</tr>
+							<tr>
+								<td colspan="2">Ячейка [31], + [32]</td>
+								<td>Ячейка [33]</td>
+								<td>Ячейка [34]</td>
+							</tr>
+							<tr>
+								<td>Ячейка [41]</td>
+								<td>Ячейка [42]</td>
+								<td colspan="2">Ячейка [43], + [44]</td>
+							</tr>
+							<tr>
+								<td>Ячейка [51]</td>
+								<td colspan="3">Ячейка [52], + [53], [54]</td>
+							</tr>
+							<tr>
+								<td>Ячейка [61]</td>
+								<td>Ячейка [62]</td>
+								<td>Ячейка [63]</td>
+								<td>Ячейка [64]</td>
+							</tr>
+						</table>
+                </div>
+            </div>
+            <div class="col-md-12 main_box mt-4 order-sm-1">
+                <div class="container-fluid content-main">
+					<h2 class="text-center">Гиперссылки</h2>
+						<ol class="link list list-unstyled" id="links">
+							<li>
+								<a href="http://kubsu.ru">Аболютная гиперссылка на главную страницу kubsu.ru (http)</a>
+							</li>
+							<li>
+								<a href="https://kubsu.ru">Аболютная гиперссылка на главную страницу kubsu.ru (https)</a>
+							</li>
+							<li>
+								<a>Ссылка-изображение</a>
+								<br>
+								<a href="https://kubsu.ru"><img src="img/image.png" width="100" height="100" alt="first_image"></a>
+							</li>
+							<li>
+								<a href="about/inside_page.html">Сокращенная ссылка на внутреннюю страницу</a>
+							</li>
+							<li>
+								<a href="../markelloww/index.html">Сокращенная ссылка на главную страницу</a>
+							</li>
+							<li>
+								<a href="#links">Ссылка на фрагмент текущей страницы</a>
+							</li>
+							<li>
+								<a href="https://ozon.ru/search/?delivery=8&from_global=true&text=java+spring">Ссылка с тремя параметрами в URL</a>
+							</li>
+							<li>
+								<a href="https://moodle.kubsu.ru/user/profile.php?id=20202">Ссылка с параметром id в URL</a>
+							</li>
+							<li>
+								<a href="./this_directory.html">Относительная ссылка на страницу в текущем каталоге</a>
+							</li>
+							<li>
+								<a href="./about/about_page.html">Относительная ссылка на страницу в каталоге about</a>
+							</li>
+							<li>
+								<a href="../katalog_vishe.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+							</li>
+							<li>
+								<a href="../katalog_vishe.html">Относительная ссылка на страницу двумя уровнями выше</a>
+							</li>
+							<li>
+								<a>Контекстная</a>
+								<a href="https://kubsu.ru">ссылка</a>
+								<a>в тексе абзаца</a>
+							</li>
+							<li>
+								<a href="https://leetcode.com/problemset/#headlessui-portal-root">Ссылка на фрагмент страницы стороннего сайта</a>
+							</li>
+							<li>
+								<a>Ссылка из прямоугольных и круглых областей картинки</a>
+								<br/>
+								<img src="img/image.png" width="200" height="200" alt="second_image" usemap="#marksmap">
+								<map name = "marksmap">
+									<area shape="rect" coords="0,0,200,100" href="https://vk.com" alt="Прямоугольная область">
+									<area shape="circle" coords="100,150,50" href="https://youtube.com" alt="Круглая область">
+								</map>
+							</li>
+							<li>
+								<a href>Ссылка с пустым href</a>
+							</li>
+							<li>
+								<a>Ссылка без href</a>
+							</li>
+							<li>
+								<a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковиком</a>
+							</li>
+							<li>
+								<a href="https://kubsu.ru" rel="nofollow">
+									<!--noindex-->
+									Запрещенная для индексации поисковиком ссылка</a>							<!--/noindex-->
+							</li>
+							<li>
+								<a>Нумерованный список ссылок с подписями title</a>
+								<ul>
+									<li>
+										<a href="#links" title="Нумерованый список ссылок">Список гиперссылок</a>
+									</li>
+									<li>
+										<a href="#form" title="Нумерованый список ссылок">Форма</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="ftp://username:password@somesite.com/auth.html">Ссылка на файл на сервере FTP с авторизацией</a>
+							</li>
+						</ol>
+                </div>
+            </div>
+            <div class="col-md-12 main_box mt-4 order-sm-3">
+                <div class="container-fluid content-main">
+					<h2 class="text-center mb-4">Форма</h2>
+						<form action="/" method="POST" id="form">
+							<label>
+								ФИО:
+								<br/>
+								<input class="text-field" placeholder="Попов Марк Владимирович" type="text">
+							</label>
+							<br/><br/>
+							<label>
+								Телефон:
+								<br/>
+								<input class="text-field" placeholder="+78005553535" type="tel">
+							</label>
+							<br/><br/>
+							<label>
+								E-mail:
+								<br/>
+								<input class="text-field" placeholder="example@mail.ru" type="email">
+							</label>
+							<br/><br/>
+							<label>
+								Дата рождения:
+								<br/>
+								<input class="text-field" type="date">
+							</label>
+							<br/><br/>
+							<a>Пол:</a>
+							<label>
+								М
+								<input type="radio" value="М">
+							</label>
+							<label>
+								Ж
+								<input type="radio" value="Ж">
+							</label>
+							<br/><br/>
+							<label>
+								Любимый язык программирования:
+								<br/>
+								<select class="text-field" multiple="multiple" size="5">
+									<option value="1">Pascal</option>
+									<option value="2">C</option>
+									<option value="3">C++</option>
+									<option value="4">JavaScript</option>
+									<option value="5">PHP</option>
+									<option value="6">Python</option>
+									<option value="7">Java</option>
+									<option value="8">Haskel</option>
+									<option value="9">Clojure</option>
+									<option value="10">Prolog</option>
+									<option value="11">Scala</option>
+								</select>
+							</label>
+							<br/><br/>
+							<label>
+								Биография:
+								<br/>
+								<textarea class="text-field">Введи текст</textarea>
+							</label>
+							<br/><br/>
+							<label>
+								С контрактом ознакомлен(а)
+								<input type="checkbox">
+							</label>
+							<br/><br/>
+							<input type="submit" value="Сохранить">
+							<br/>
+						</form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footer__inner">
+            <span>(c) Попов Марк</span>
+        </div>
+    </footer>
+</body>
+</html>
