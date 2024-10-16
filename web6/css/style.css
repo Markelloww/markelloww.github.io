@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'customThin';
+    src: url('/web6/font/MontserratAlternates-Thin.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'customBold';
+    src: url('/web6/font/MontserratAlternates-Bold.ttf');
+    font-weight: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'customThin';
+}
+body {
+	background-color: #39383F;
+}
+:root {
+    --bg-color: yellow;
+    --primary-color: #FFF;
+    --secondary-color: #AAA;
+    --secondary-bg-color: #454545;
+}
+*:disabled {
+    opacity: 0;
+}
+.calculator {
+	color: #F5E2CD;
+    background-color: #413D4C;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+.calc-head {
+    padding: 5px 10px;
+}
+.calc-input {
+    padding: 10px;
+}
+.calc-input select:focus-visible {
+    outline: none;
+}
+.calc-input input[type="text"] {
+    width: max-content;
+    padding: 5px;
+}
+#calc-radio-group {
+    padding: 5px;
+    background-color: white;
+	color: #39383F;
+}
+h3 {
+    font-weight: 400;
+    margin-bottom: 3px;
+    text-align: center;
+}
+#quantity-outter {
+    width: fit-content;
+    margin: auto;
+	text-align: center;
+}
+#product-type-outter {
+    width: fit-content;
+    margin: auto;
+}
+#subproducts-outter {
+    width: fit-content;
+    margin: auto;
+}
+#subproducts {
+    padding: 5px 10px;
+	text-align: center;
+}
+#subproduct-property {
+    padding: 5px 10px;
+}
+#product-property-label {
+    margin-left: 5px;
+}
+#calc-button-outter {
+    width: fit-content;
+    margin: auto;
+}
+#calc-button {
+    padding: 5px;
+}
+.calc-result {
+    padding: 5px 10px;
+    width: fit-content;
+    margin: auto;
+	text-align: center;
+}
+.calc-result h2 {
+    font-weight: 400;
+    text-align: center;
+}
+.calc-text h1 {
+	font-family: 'customBold';
+}
+#result {
+    font-size: 5svh;
+    text-align: center;
+	font-family: 'customBold';
+	color: #F09EA3;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6 Попов Марк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <div class="calculator">
+            <div class="calc-head">
+                <h1 class="calc-text">Рассчитать стоимость ремонта</h1>
+            </div>
+            <div class="calc-body">
+                <div class="calc-input">
+					<div id="product-type-outter">
+                        <h3 class="calc-text">Услуги:</h3>
+                        <fieldset id="calc-radio-group"/>
+                    </div>
+                    <div id="subproducts-outter">
+                        <div>
+                            <h3 class="calc-text">Уточните услугу:</h3>
+                            <div id="subproducts">
+                                <select class="calc-text" name="subproducts-select" id="subproducts-select" disabled>
+                                    <option value=""/>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="calc-text">Дополнительные услуги: </h3>
+                            <div id="subproduct-properties"></div>
+                        </div>
+						<div id="quantity-outter">
+							<h3 class="calc-text">Площадь помещения (кв.м):</h3>
+							<input type="text" name="quantity" id="quantity-input" class="underline-to-border calc-text">
+						</div>
+                    </div>
+                </div>
+                <div id="calc-button-outter">
+                    <button type="button" id="calc-button" class="calc-text">Рассчитать</button>
+                </div>
+                <div class="calc-result">
+                    <h2 class="calc-text">Примерная стоимость работы:</h2>
+                    <span id="result" class="calc-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
