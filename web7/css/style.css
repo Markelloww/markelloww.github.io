@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#image-carousel {
+	margin: 50px;
+	margin-top: 100px;
+	background-color: darkgray;
+	padding: 40px;
+	border: 2px solid black;
+}
+.splide__slide img {
+	width: 50dvw;
+	height: 50dvw;
+	margin-left: calc((100% - 50dvw)/2);
+}
+img {
+	border: 2px solid black;
+}
+@media screen and (width >= 640px) {
+	.splide__slide img {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+		aspect-ratio: 1/1;
+	}
+}
