@@ -222,6 +222,7 @@ html {
 	flex-wrap: wrap;
 }
 #company-support {
+	margin-top: 44lvh;
 	display: flex;
 	flex-direction: column;
 }
@@ -346,7 +347,7 @@ html {
 	background-size: cover;
 	top: 0;
 	right: 0;
-	margin-top: -80px;
+	margin-top: -20px;
 }
 .plans-container .plans {
 	width: 100%;
