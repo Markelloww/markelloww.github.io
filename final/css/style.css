@@ -341,7 +341,7 @@ html {
 	position:absolute;
 }
 .plans-container {
-	background-image: url("img/D-background-opacity.svg");
+	background-image: url("../img/D-background-opacity.svg");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
